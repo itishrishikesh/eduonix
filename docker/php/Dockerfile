@@ -1,4 +1,5 @@
-FROM php:7.4-cli
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
-RUN "php ./sample-php-file.php"
+FROM php:8.0-apache
+WORKDIR /var/www/html
+
+COPY sample-php-file.php index.php
+EXPOSE 80
