@@ -8,3 +8,13 @@ spec:
   containers:
     - name: php-container
       image: php
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: php
+spec:
+  ports:
+  - port: 80
+  selector:
+    app: php-app

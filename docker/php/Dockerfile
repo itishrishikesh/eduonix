@@ -1,5 +1,7 @@
 FROM php:8.0-apache
 WORKDIR /var/www/html
 
+RUN docker-php-ext-install mysqli
+
 COPY sample-php-file.php index.php
 EXPOSE 80
