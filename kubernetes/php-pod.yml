@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: php-container
-      image: php
+      image: itishrishikesh/dummy-lamp:php
 ---
 apiVersion: v1
 kind: Service

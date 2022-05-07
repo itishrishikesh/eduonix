@@ -30,10 +30,8 @@ kind: Service
 metadata:
   name: mysql
 spec:
-  type: NodePort
   ports:
   - port: 3306
-    nodePort: 30036
     targetPort: 3306
   selector:
     app: mysql

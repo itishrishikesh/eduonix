@@ -7,7 +7,7 @@
 <?php
 echo "Hello World!";
 
-$servername = "192.168.49.2";
+$servername = "mysql";
 $username = "root";
 $password = "test1234";
 
